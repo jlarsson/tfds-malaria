@@ -24,7 +24,7 @@ In such distinguished company, this work is not expected to be a competitor rega
 
 ## Artifacts
 - A commandline utility for binary classification of thin smear blood cell images
-- The [explorative work and resoning]((https://github.com/jlarsson/tfds-malaria/blob/main/malaria.ipynb)) will be published online as a python notebook 
+- The [explorative work and reasoning](https://github.com/jlarsson/tfds-malaria/blob/main/malaria.ipynb) will be published online as a python notebook 
 
 ## Features
 - Data analysis
