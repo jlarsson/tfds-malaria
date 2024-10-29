@@ -20,7 +20,7 @@ Some notable references are
 - [Pre-trained convolutional neural networks as feature extractors toward improved malaria parasite detection in thin blood smear images](https://peerj.com/articles/4568/)
 - [Efficient deep learning-based approach for malaria detection using red blood cell smears](https://www.nature.com/articles/s41598-024-63831-0)
 
-In such distinguished company, this work is not expected to be a competitor regardning quality and thoroughness... 
+In such distinguished company, this work is not expected to be a competitor regarding quality and thoroughness... 
 
 ## Artifacts
 - A commandline utility for binary classification of thin smear blood cell images
@@ -41,7 +41,7 @@ In such distinguished company, this work is not expected to be a competitor rega
     - investigate model designs using k-fold cross validation
     - showcase model performance 
 - Preprocessors
-    - if images needs conversion to be accepted by the model
+    - conversion of images in "natural" format (jpg, png etc), to the formats required by the models
 - Prediction
     - a predictor (or multiple) that normalizes input images and classifies using a pretrained model
 
