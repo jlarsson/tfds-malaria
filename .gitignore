@@ -1,4 +1,8 @@
+# MacOS
+.DS_Store
+
 # Project specifics
+logs/
 wip*
 *.keras
 *.history
