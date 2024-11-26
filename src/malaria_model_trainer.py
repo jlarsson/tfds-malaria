@@ -2,8 +2,8 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 from tensorflow.keras import Model
 from tensorflow.keras.models import Sequential 
-from tensorflow.keras.layers import Dense, Conv2D, Input, MaxPooling2D, Flatten, GlobalAveragePooling2D
-from tensorflow.keras.callbacks import EarlyStopping, History, ModelCheckpoint, TensorBoard
+from tensorflow.keras.layers import Dense, Conv2D, Input, MaxPooling2D, Flatten
+from tensorflow.keras.callbacks import EarlyStopping
 
 class MalariaModelTrainer:
     '''

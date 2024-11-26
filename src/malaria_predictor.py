@@ -13,6 +13,18 @@ class MalariaPredictor:
     verbose: int
     model_path: str
     model: Model
+
+    @staticmethod
+    def convert_binary_to_image_tensor(data):
+        # decode into supported image format
+        image = tf.image.decode_image(data) if data else None
+        # convert to grayscale
+        image = tf.image.rgb_to_grayscale(image)
+        # resize to our trained resolution
+        image = tf.image.resize(image, [121,121])
+        # normalize
+        return image / 255.0
+
     def __init__(self, model_path: str, verbose=1):
         self.verbose = verbose
         self.model = None

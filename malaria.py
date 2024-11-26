@@ -1,7 +1,6 @@
 import argparse
 
-from src.resource import LoadResourceFromFile, LoadResourceFromUrl, ConvertImageResource
-from src.malaria_predictor import MalariaPredictor
+from src.malaria_main import malaria_main
 
 def main():
     # Create commandline parser
@@ -17,21 +16,7 @@ def main():
     verbose = 0 if args.silent else 1
 
     try:
-        # get input image from file or url and convert to 121x121 grayscale
-        image = ConvertImageResource(
-                inner = LoadResourceFromUrl(
-                    inner = LoadResourceFromFile()
-                )).load(resource=resource)
-        
-        if image is None:
-            print(f'Error: image resource "{resource}" not found')
-            exit(2)
-
-        # predict
-        prediction = MalariaPredictor('malaria-model.keras', verbose=verbose).predict(image)
-        if verbose:
-            print(f'prediction={prediction} (0 = parasitized, 1 = uninfected)')
-        print('Parasitized' if round(prediction) == 0 else 'Uninfected')
+        malaria_main(resource=resource, verbose=verbose)
     except Exception as e:
         print(f'Error: {e}')
         exit(2)

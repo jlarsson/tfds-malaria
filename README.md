@@ -1,5 +1,16 @@
 # tfds-malaria - a Supervised Machine Learning Project
 
+## Usage
+```
+pip install -r requirements.txt
+python malaria.py --src <path or url to image> [--silent]
+```
+
+The main program [malaria.py](malaria.py) attempts to load image denoted by commandline parameter __--src__ and performs classification into __Parasitized__ or __Unifected__.
+
+I the file __model.keras__ doent exists, a new model is trained and saved to that file for future usage.
+For details about the model and the underlying reasong, please check out [malaria.ipynb](malaria.ipynb).
+
 ## Specification
 A binary classification system detecting malaria parazite infection in blood cell thin smear images.
 
@@ -44,5 +55,3 @@ In such distinguished company, this work is not expected to be a competitor rega
     - conversion of images in "natural" format (jpg, png etc), to the formats required by the models
 - Prediction
     - a predictor (or multiple) that normalizes input images and classifies using a pretrained model
-
-
