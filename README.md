@@ -44,9 +44,9 @@ In such distinguished company, this work is not expected to be a competitor rega
 
 ## Artifacts
 - A commandline utility for binary classification of thin smear blood cell images
-- The [explorative work and reasoning](https://github.com/jlarsson/tfds-malaria/blob/main/malaria.ipynb) will be published online as a python notebook 
+- The [explorative work and reasoning](https://github.com/jlarsson/tfds-malaria/blob/main/malaria.ipynb)
 
-## Features
+## Features ([malaria.ipynb](malaria.ipynb))
 - Data analysis
     - investigate overall data quality and completeness
     - investigate possible outliers or systematic errors/biases in the dataset
@@ -54,11 +54,10 @@ In such distinguished company, this work is not expected to be a competitor rega
         - devise training metrics
     - recommend normalizations (of images)
 - Model training and validation
-    - one or more convoluted neural networks
+    - various convoluted neural networks
         - different networks may differ in
             - speed, accuracy or preprocessing needs
-            - architectural choices such as ad hoc models or hybrid models with pretrained layers (VGG16, VGG19)
-    - investigate model designs using k-fold cross validation
+            - architectural choices such as ad hoc models or hybrid models with pretrained layers (VGG16)
     - showcase model performance 
 - Preprocessors
     - conversion of images in "natural" format (jpg, png etc), to the formats required by the models
